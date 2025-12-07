@@ -17,7 +17,7 @@ export default function SectionCard({ category }: { category: HelpCategory }) {
             {category.articles.map((article) => (
               <li key={article.id}>
                 <Link
-                  href={article.href}
+                  href="/help"
                   className="text-primary-600 dark:text-primary-400 hover:underline text-sm font-medium"
                 >
                   {article.title}

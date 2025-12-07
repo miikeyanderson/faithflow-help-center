@@ -27,10 +27,10 @@ export default function HelpPage() {
             {/* FAQ Items */}
             <div className="space-y-0">
               {category.articles.map((article) => (
-                <FAQItem 
+                <FAQItem
                   key={article.id}
                   title={article.title}
-                  href={article.href}
+                  answer={article.answer}
                 />
               ))}
             </div>
