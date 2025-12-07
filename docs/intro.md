@@ -2,46 +2,40 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Faithflow Help Center
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Get help with Faithflow, a faith-based learning app that helps you grow spiritually through structured lessons, engaging activities, and community features.
 
-## Getting Started
+## Quick Links
 
-Get started by **creating a new site**.
+### Getting Started
+- [What is Faithflow?](./getting-started/what-is-faithflow)
+- [Creating Your Account](./getting-started/creating-account)
+- [Getting Started Guide](./getting-started/first-steps)
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Learning & Progress
+- [How Lessons Work](./lessons/how-lessons-work)
+- [Understanding XP & Levels](./hearts-and-xp/xp-and-levels)
+- [Hearts System](./hearts-and-xp/hearts-system)
+- [Daily Streaks](./streaks/daily-streaks)
 
-### What you'll need
+### Account & Settings
+- [Managing Your Profile](./accounts/managing-profile)
+- [Privacy Settings](./accounts/privacy-settings)
+- [Notification Preferences](./notifications/notification-preferences)
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Support
+- [Troubleshooting Common Issues](./troubleshooting/common-issues)
+- [Contact Support](./troubleshooting/contact-support)
+- [Send Feedback](/feedback)
 
-## Generate a new site
+## Need More Help?
 
-Generate a new Docusaurus site using the **classic template**.
+If you can't find what you're looking for, you can:
+- Browse all articles using the navigation menu
+- [Send us feedback](/feedback) about your experience
+- [Report a problem](./troubleshooting/contact-support) you're experiencing
 
-The classic template will automatically be added to your project after you run the command:
+---
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+**Note:** This Help Center is actively maintained. Articles are regularly updated to reflect the latest app features and improvements.
