@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 interface Attribution {
   id: string;
-  name: string;
+  packageName: string;
   version: string;
   url: string;
   license: string;
@@ -16,7 +16,7 @@ const attributions: Attribution[] = [
   // Swift Package Dependencies
   {
     id: 'supabase-swift',
-    name: 'Supabase Swift',
+    packageName: 'supabase/supabase-swift',
     version: 'v2.33.0',
     url: 'https://github.com/supabase/supabase-swift',
     license: 'MIT License',
@@ -24,7 +24,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'firebase-ios',
-    name: 'Firebase iOS SDK',
+    packageName: 'firebase/firebase-ios-sdk',
     version: 'v11.12.0',
     url: 'https://github.com/firebase/firebase-ios-sdk',
     license: 'Apache 2.0 License',
@@ -32,7 +32,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-mobile-ads',
-    name: 'Google Mobile Ads',
+    packageName: 'googleads/swift-package-manager-google-mobile-ads',
     version: 'v12.12.0',
     url: 'https://github.com/googleads/swift-package-manager-google-mobile-ads',
     license: 'Apache 2.0 License',
@@ -40,7 +40,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-ump',
-    name: 'Google User Messaging Platform',
+    packageName: 'googleads/swift-package-manager-google-user-messaging-platform',
     version: 'v3.1.0',
     url: 'https://github.com/googleads/swift-package-manager-google-user-messaging-platform',
     license: 'Apache 2.0 License',
@@ -48,7 +48,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'markdown-ui',
-    name: 'MarkdownUI',
+    packageName: 'gonzalezreal/MarkdownUI',
     version: 'v2.4.1',
     url: 'https://github.com/gonzalezreal/MarkdownUI',
     license: 'MIT License',
@@ -56,7 +56,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'network-image',
-    name: 'NetworkImage',
+    packageName: 'gonzalezreal/NetworkImage',
     version: 'v6.0.1',
     url: 'https://github.com/gonzalezreal/NetworkImage',
     license: 'MIT License',
@@ -64,7 +64,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'view-inspector',
-    name: 'ViewInspector',
+    packageName: 'nalexn/ViewInspector',
     version: 'v0.10.3',
     url: 'https://github.com/nalexn/ViewInspector',
     license: 'MIT License',
@@ -72,7 +72,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'eventsource',
-    name: 'EventSource',
+    packageName: 'loopwork-ai/eventsource',
     version: 'v1.1.1',
     url: 'https://github.com/loopwork-ai/eventsource',
     license: 'MIT License',
@@ -80,7 +80,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'mcp-swift',
-    name: 'Model Context Protocol Swift SDK',
+    packageName: 'modelcontextprotocol/swift-sdk',
     version: 'v0.9.0',
     url: 'https://github.com/modelcontextprotocol/swift-sdk',
     license: 'MIT License',
@@ -89,7 +89,7 @@ const attributions: Attribution[] = [
   // Apple Open Source
   {
     id: 'swift-syntax',
-    name: 'Swift Syntax',
+    packageName: 'swiftlang/swift-syntax',
     version: 'v600.0.1',
     url: 'https://github.com/swiftlang/swift-syntax',
     license: 'Apache 2.0 License',
@@ -97,7 +97,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-crypto',
-    name: 'Swift Crypto',
+    packageName: 'apple/swift-crypto',
     version: 'v3.12.3',
     url: 'https://github.com/apple/swift-crypto',
     license: 'Apache 2.0 License',
@@ -105,7 +105,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-log',
-    name: 'Swift Log',
+    packageName: 'apple/swift-log',
     version: 'v1.6.3',
     url: 'https://github.com/apple/swift-log',
     license: 'Apache 2.0 License',
@@ -113,7 +113,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-protobuf',
-    name: 'Swift Protobuf',
+    packageName: 'apple/swift-protobuf',
     version: 'v1.30.0',
     url: 'https://github.com/apple/swift-protobuf',
     license: 'Apache 2.0 License',
@@ -121,7 +121,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-http-types',
-    name: 'Swift HTTP Types',
+    packageName: 'apple/swift-http-types',
     version: 'v1.5.1',
     url: 'https://github.com/apple/swift-http-types',
     license: 'Apache 2.0 License',
@@ -129,7 +129,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-asn1',
-    name: 'Swift ASN1',
+    packageName: 'apple/swift-asn1',
     version: 'v1.4.0',
     url: 'https://github.com/apple/swift-asn1',
     license: 'Apache 2.0 License',
@@ -137,7 +137,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-system',
-    name: 'Swift System',
+    packageName: 'apple/swift-system',
     version: 'v1.5.0',
     url: 'https://github.com/apple/swift-system',
     license: 'Apache 2.0 License',
@@ -145,7 +145,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-cmark',
-    name: 'Swift cmark',
+    packageName: 'swiftlang/swift-cmark',
     version: 'v0.6.0',
     url: 'https://github.com/swiftlang/swift-cmark',
     license: 'BSD 2-Clause License',
@@ -154,7 +154,7 @@ const attributions: Attribution[] = [
   // Point-Free Libraries
   {
     id: 'swift-clocks',
-    name: 'Swift Clocks',
+    packageName: 'pointfreeco/swift-clocks',
     version: 'v1.0.6',
     url: 'https://github.com/pointfreeco/swift-clocks',
     license: 'MIT License',
@@ -162,7 +162,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'swift-concurrency-extras',
-    name: 'Swift Concurrency Extras',
+    packageName: 'pointfreeco/swift-concurrency-extras',
     version: 'v1.3.1',
     url: 'https://github.com/pointfreeco/swift-concurrency-extras',
     license: 'MIT License',
@@ -170,7 +170,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'xctest-dynamic-overlay',
-    name: 'XCTest Dynamic Overlay',
+    packageName: 'pointfreeco/xctest-dynamic-overlay',
     version: 'v1.8.0',
     url: 'https://github.com/pointfreeco/xctest-dynamic-overlay',
     license: 'MIT License',
@@ -179,7 +179,7 @@ const attributions: Attribution[] = [
   // Google Infrastructure
   {
     id: 'abseil-cpp',
-    name: 'Abseil C++',
+    packageName: 'google/abseil-cpp-binary',
     version: 'v1.2024072200.0',
     url: 'https://github.com/google/abseil-cpp-binary',
     license: 'Apache 2.0 License',
@@ -187,7 +187,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-app-check',
-    name: 'Google App Check',
+    packageName: 'google/app-check',
     version: 'v11.2.0',
     url: 'https://github.com/google/app-check',
     license: 'Apache 2.0 License',
@@ -195,7 +195,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-app-measurement',
-    name: 'Google App Measurement',
+    packageName: 'google/GoogleAppMeasurement',
     version: 'v11.12.0',
     url: 'https://github.com/google/GoogleAppMeasurement',
     license: 'Apache 2.0 License',
@@ -203,7 +203,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-data-transport',
-    name: 'Google Data Transport',
+    packageName: 'google/GoogleDataTransport',
     version: 'v10.1.0',
     url: 'https://github.com/google/GoogleDataTransport',
     license: 'Apache 2.0 License',
@@ -211,7 +211,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-utilities',
-    name: 'Google Utilities',
+    packageName: 'google/GoogleUtilities',
     version: 'v8.1.0',
     url: 'https://github.com/google/GoogleUtilities',
     license: 'Apache 2.0 License',
@@ -219,7 +219,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'grpc-binary',
-    name: 'gRPC Binary',
+    packageName: 'google/grpc-binary',
     version: 'v1.69.0',
     url: 'https://github.com/google/grpc-binary',
     license: 'Apache 2.0 License',
@@ -227,7 +227,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'gtm-session-fetcher',
-    name: 'GTM Session Fetcher',
+    packageName: 'google/gtm-session-fetcher',
     version: 'v4.5.0',
     url: 'https://github.com/google/gtm-session-fetcher',
     license: 'Apache 2.0 License',
@@ -235,7 +235,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'interop-ios',
-    name: 'Interop iOS for Google SDKs',
+    packageName: 'google/interop-ios-for-google-sdks',
     version: 'v101.0.0',
     url: 'https://github.com/google/interop-ios-for-google-sdks',
     license: 'Apache 2.0 License',
@@ -243,7 +243,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'google-promises',
-    name: 'Google Promises',
+    packageName: 'google/promises',
     version: 'v2.4.0',
     url: 'https://github.com/google/promises',
     license: 'Apache 2.0 License',
@@ -252,7 +252,7 @@ const attributions: Attribution[] = [
   // Firebase Infrastructure
   {
     id: 'leveldb',
-    name: 'LevelDB',
+    packageName: 'firebase/leveldb',
     version: 'v1.22.5',
     url: 'https://github.com/firebase/leveldb',
     license: 'BSD 3-Clause License',
@@ -260,7 +260,7 @@ const attributions: Attribution[] = [
   },
   {
     id: 'nanopb',
-    name: 'Nanopb',
+    packageName: 'firebase/nanopb',
     version: 'v2.30910.0',
     url: 'https://github.com/firebase/nanopb',
     license: 'Zlib License',
@@ -269,7 +269,7 @@ const attributions: Attribution[] = [
   // Fonts
   {
     id: 'nunito-font',
-    name: 'Nunito Font Family',
+    packageName: 'Nunito Font Family',
     version: 'by Vernon Adams',
     url: 'https://fonts.google.com/specimen/Nunito',
     license: 'Open Font License (OFL)',
@@ -364,21 +364,12 @@ function AttributionItem({ attribution }: AttributionItemProps) {
         className="flex items-center justify-between w-full px-6 py-6 text-left transition"
       >
         <div className="flex-1">
-          <h2 className="text-lg font-extrabold text-gray-900 dark:text-white mb-1">
-            {attribution.name}
+          <h2 className="text-xl font-extrabold text-gray-900 dark:text-white mb-2">
+            @{attribution.packageName}
           </h2>
-          <p className="text-sm font-semibold text-[#4AC1F8] mb-2">
-            {attribution.license} • {attribution.version}
+          <p className="text-base font-semibold text-[#4AC1F8]">
+            {attribution.license}
           </p>
-          <a
-            href={attribution.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-gray-600 dark:text-gray-400 hover:underline"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {attribution.url}
-          </a>
         </div>
         <svg
           className={`w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-4 ${
@@ -401,7 +392,7 @@ function AttributionItem({ attribution }: AttributionItemProps) {
         <div className="px-6 pb-6">
           <div className="bg-gray-50 dark:bg-[#0a1419] p-4 rounded-lg">
             <pre className="text-xs text-gray-700 dark:text-gray-300 whitespace-pre-wrap font-mono leading-relaxed">
-              {getLicenseText(attribution.license, attribution.name, attribution.url)}
+              {getLicenseText(attribution.license, attribution.packageName, attribution.url)}
             </pre>
           </div>
         </div>
@@ -431,7 +422,7 @@ export default function AttributionPage() {
       {/* Page Title */}
       <div className="max-w-3xl mx-auto px-4 py-8">
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#3C3C3C] dark:text-white text-center">
-          Open Source Attribution
+          Open Source Attribution for Faithflow
         </h1>
       </div>
 
