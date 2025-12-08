@@ -364,12 +364,9 @@ function AttributionItem({ attribution }: AttributionItemProps) {
         className="flex items-center justify-between w-full px-6 py-6 text-left transition"
       >
         <div className="flex-1">
-          <h2 className="text-xl font-extrabold text-gray-900 dark:text-white mb-2">
+          <h2 className="text-xl font-extrabold text-gray-900 dark:text-white">
             @{attribution.packageName}
           </h2>
-          <p className="text-base font-semibold text-[#4AC1F8]">
-            {attribution.license}
-          </p>
         </div>
         <svg
           className={`w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-4 ${
@@ -406,22 +403,9 @@ export default function AttributionPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Breadcrumb Navigation */}
-      <div className="max-w-3xl mx-auto px-4 pt-6 pl-6">
-        <div className="flex items-center gap-2 text-base font-extrabold">
-          <Link href="/attribution" className="text-[#4AC1F8] hover:underline uppercase">
-            Attribution
-          </Link>
-          <span className="text-gray-400 text-lg">›</span>
-          <Link href="/" className="text-[#4AC1F8] hover:underline uppercase">
-            Home
-          </Link>
-        </div>
-      </div>
-
       {/* Page Title */}
       <div className="max-w-3xl mx-auto px-4 py-8">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-[#3C3C3C] dark:text-white text-center">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-[#3C3C3C] dark:text-white">
           Open Source Attribution for Faithflow
         </h1>
       </div>
@@ -429,25 +413,9 @@ export default function AttributionPage() {
       {/* Attribution Card Container */}
       <div className="max-w-3xl mx-auto px-4 pb-12">
         <div className="bg-white dark:bg-[#121F25] rounded-2xl overflow-hidden border-2 border-[#D8D8D8] dark:border-[#37454F]">
-          {/* Attribution Items by Category */}
-          {categories.map((category, categoryIndex) => (
-            <div key={category}>
-              {/* Category Header */}
-              <div className={`px-6 py-6 ${categoryIndex > 0 ? 'border-t-2 border-[#D8D8D8] dark:border-[#37454F]' : ''}`}>
-                <h2 className="text-lg font-extrabold text-[#4AC1F8]">
-                  {category}
-                </h2>
-              </div>
-
-              {/* Attribution Items */}
-              <div>
-                {attributions
-                  .filter(a => a.category === category)
-                  .map((attribution) => (
-                    <AttributionItem key={attribution.id} attribution={attribution} />
-                  ))}
-              </div>
-            </div>
+          {/* Attribution Items */}
+          {attributions.map((attribution) => (
+            <AttributionItem key={attribution.id} attribution={attribution} />
           ))}
 
           {/* Footer Note */}
