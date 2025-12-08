@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-sm" style={{ backgroundColor: '#4867D2' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 backdrop-blur-sm" style={{ backgroundColor: '#4867D2', paddingTop: 'env(safe-area-inset-top)' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingLeft: 'max(1rem, env(safe-area-inset-left))', paddingRight: 'max(1rem, env(safe-area-inset-right))' }}>
         <div className="flex justify-center items-center h-20">
           <Link href="/">
             {/* Light mode logo (blue) */}
