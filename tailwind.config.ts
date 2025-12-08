@@ -16,6 +16,7 @@ export default {
           600: '#4f46e5',
           700: '#4338ca',
         },
+        accent: '#1CB0F6',
       },
     },
   },

@@ -11,16 +11,16 @@ export default function FAQItem({ title, answer }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-t border-gray-200 dark:border-gray-700">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full py-4 text-left hover:bg-gray-50 transition"
+        className="flex items-center justify-between w-full px-6 py-4 text-left hover:bg-gray-200 dark:hover:bg-gray-800 transition"
       >
-        <span className="text-black font-medium">
+        <span className="text-gray-900 dark:text-white font-medium">
           {title}
         </span>
         <svg
-          className={`w-5 h-5 text-gray-400 transition-transform ${
+          className={`w-5 h-5 text-gray-400 transition-transform flex-shrink-0 ml-4 ${
             isOpen ? 'rotate-180' : ''
           }`}
           fill="none"
@@ -37,7 +37,7 @@ export default function FAQItem({ title, answer }: FAQItemProps) {
       </button>
 
       {isOpen && (
-        <div className="pb-4 px-0 text-gray-700 leading-relaxed">
+        <div className="px-6 pb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
           {answer}
         </div>
       )}
