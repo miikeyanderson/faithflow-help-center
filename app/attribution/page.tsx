@@ -438,13 +438,6 @@ export default function AttributionPage() {
       {/* Attribution Card Container */}
       <div className="max-w-3xl mx-auto px-4 pb-12">
         <div className="bg-white dark:bg-[#121F25] rounded-2xl overflow-hidden border-2 border-[#D8D8D8] dark:border-[#37454F]">
-          {/* Introduction */}
-          <div className="px-6 py-6">
-            <p className="text-gray-700 dark:text-white leading-relaxed font-medium text-base">
-              Faithflow is built with the help of many open-source projects. We are grateful to the developers and contributors who make these tools available. Click on any item to view its full license.
-            </p>
-          </div>
-
           {/* Attribution Items by Category */}
           {categories.map((category, categoryIndex) => (
             <div key={category}>
