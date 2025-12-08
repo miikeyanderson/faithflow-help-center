@@ -6,8 +6,8 @@ export default function HelpPage() {
   return (
     <div className="min-h-screen">
       {/* Breadcrumb Navigation */}
-      <div className="max-w-3xl mx-auto px-4 pt-6">
-        <div className="flex items-center gap-2 text-sm font-extrabold">
+      <div className="max-w-3xl mx-auto px-4 pt-6 pl-6">
+        <div className="flex items-center gap-2 text-base font-extrabold">
           <Link href="/help" className="text-[#4AC1F8] hover:underline uppercase">
             Help Center
           </Link>
