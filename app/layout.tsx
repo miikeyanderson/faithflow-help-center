@@ -1,6 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
 
 export const metadata: Metadata = {
   title: "Faithflow Help Center",
@@ -8,10 +14,10 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    viewportFit: 'cover',
+  themeColor: '#4867D2',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
   },
 };
 
