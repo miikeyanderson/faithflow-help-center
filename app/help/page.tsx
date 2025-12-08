@@ -4,7 +4,7 @@ import { helpCategories } from '@/data/helpData';
 
 export default function HelpPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Header */}
       <div className="border-b border-gray-200 py-8">
         <div className="max-w-3xl mx-auto px-4">
