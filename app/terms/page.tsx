@@ -27,7 +27,7 @@ export default function TermsPage() {
             <p className="text-gray-700 dark:text-white mb-4">
               If you do not agree to these Terms, you are not authorized to use or access the Service.
             </p>
-            <p className="text-gray-700 dark:text-white mb-4 p-4 bg-gray-100 dark:bg-[#1a2a33] border-l-4 border-yellow-500">
+            <p className="text-gray-700 dark:text-white mb-4 p-4 bg-gray-100 dark:bg-[#121F25] border-l-4 border-yellow-500">
               <strong>PLEASE NOTE:</strong> These Terms include a <strong>mandatory arbitration provision</strong>, requiring individual arbitration for certain disputes. SEE THE SECTION TITLED <strong>&quot;Dispute Resolution &amp; Arbitration.&quot;</strong>
             </p>
           </section>
@@ -326,7 +326,7 @@ export default function TermsPage() {
             <p className="text-gray-700 dark:text-white mb-4">
               If you believe your copyrighted work has been infringed, you may submit a notice to:
             </p>
-            <div className="bg-gray-100 dark:bg-[#1a2a33] p-4 rounded-md mb-4">
+            <div className="bg-gray-100 dark:bg-[#121F25] p-4 rounded-md mb-4">
               <p className="text-gray-700 dark:text-white font-semibold">Asymmetric Labs – DMCA Agent</p>
               <p className="text-gray-700 dark:text-white">Email: <a href="mailto:legal@faithflowapp.com" className="text-blue-600 hover:underline">legal@faithflowapp.com</a></p>
             </div>
