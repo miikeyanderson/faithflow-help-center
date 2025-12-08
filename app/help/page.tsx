@@ -8,11 +8,11 @@ export default function HelpPage() {
       {/* Breadcrumb Navigation */}
       <div className="max-w-3xl mx-auto px-4 pt-6">
         <div className="flex items-center gap-2 text-sm font-extrabold">
-          <Link href="/help" className="text-[#1CB0F6] hover:underline uppercase">
+          <Link href="/help" className="text-[#F5A623] hover:underline uppercase">
             Help Center
           </Link>
           <span className="text-gray-400 text-lg">›</span>
-          <Link href="/" className="text-[#1CB0F6] hover:underline uppercase">
+          <Link href="/" className="text-[#F5A623] hover:underline uppercase">
             Home
           </Link>
         </div>
@@ -32,7 +32,7 @@ export default function HelpPage() {
             <div key={category.id}>
               {/* Category Header */}
               <div className={`px-6 py-6 ${categoryIndex > 0 ? 'border-t-2 border-[#D8D8D8] dark:border-[#37454F]' : ''}`}>
-                <h2 className="text-lg font-extrabold text-[#1CB0F6]">
+                <h2 className="text-lg font-extrabold text-[#F5A623]">
                   {category.title}
                 </h2>
               </div>
